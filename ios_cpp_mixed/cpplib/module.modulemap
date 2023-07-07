@@ -1,0 +1,4 @@
+module Bridge {
+    header "bridge.hpp"
+    requires cplusplus
+}
