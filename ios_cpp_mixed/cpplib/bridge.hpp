@@ -13,8 +13,8 @@
 
 class Car {
 public:
-    Car (std::string str, int seats, float p) {
-        name = str;
+    Car (char* str, int seats, float p) {
+        name = std::string(str);
         seaters = seats;
         price = p;
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF268F622A5BCED7000D159C /* CppTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF268F612A5BCED7000D159C /* CppTest.swift */; };
 		BF850B7B2A4EA64F006D5112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF850B7A2A4EA64F006D5112 /* AppDelegate.swift */; };
 		BF850B7D2A4EA64F006D5112 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF850B7C2A4EA64F006D5112 /* SceneDelegate.swift */; };
 		BF850B7F2A4EA64F006D5112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF850B7E2A4EA64F006D5112 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF268F612A5BCED7000D159C /* CppTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CppTest.swift; sourceTree = "<group>"; };
 		BF850B772A4EA64F006D5112 /* ios_cpp_mixed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_cpp_mixed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF850B7A2A4EA64F006D5112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF850B7C2A4EA64F006D5112 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				BF850B7A2A4EA64F006D5112 /* AppDelegate.swift */,
 				BF850B7C2A4EA64F006D5112 /* SceneDelegate.swift */,
 				BF850B7E2A4EA64F006D5112 /* ViewController.swift */,
+				BF268F612A5BCED7000D159C /* CppTest.swift */,
 				BF850B802A4EA64F006D5112 /* Main.storyboard */,
 				BF850B832A4EA650006D5112 /* Assets.xcassets */,
 				BF850B852A4EA650006D5112 /* LaunchScreen.storyboard */,
@@ -277,6 +280,7 @@
 				BF850BAE2A4EA6B5006D5112 /* bridge.cpp in Sources */,
 				BF850B7F2A4EA64F006D5112 /* ViewController.swift in Sources */,
 				BF850B7B2A4EA64F006D5112 /* AppDelegate.swift in Sources */,
+				BF268F622A5BCED7000D159C /* CppTest.swift in Sources */,
 				BF850B7D2A4EA64F006D5112 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,9 +476,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-enable-experimental-cxx-interop";
 				PRODUCT_BUNDLE_IDENTIFIER = "authme.ios-cpp-mixed";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = ./ios_cpp_mixed/cpplib;
+				SWIFT_OBJC_INTEROP_MODE = objc;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -502,9 +509,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "-enable-experimental-cxx-interop";
 				PRODUCT_BUNDLE_IDENTIFIER = "authme.ios-cpp-mixed";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = ./ios_cpp_mixed/cpplib;
+				SWIFT_OBJC_INTEROP_MODE = objc;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
